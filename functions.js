@@ -2,6 +2,11 @@ function error(desc) {
   throw new Error(desc);
 }
 
+function is_list(list)
+{
+  return _.isArray(list);
+}
+
 function car(list) {
   if (!_.isArray(list))
     error("Not an Array");
